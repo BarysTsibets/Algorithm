@@ -3,6 +3,7 @@ def binary_search(new_list, item):
     high = len(new_list)-1
 
     while low <= high:
+        # We will check mid element, until this part (low<=high ) will contain only 1 element
         mid = int((low + high)/2)
         guess = new_list[mid]
         if guess == item:
